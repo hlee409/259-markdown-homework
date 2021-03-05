@@ -1657,7 +1657,7 @@ ds &lt;- ds %&gt;% drop_na(AUC_sal:AUC_dist) #Drop participants for whom we don'
 <h2>STEP 3: EXPLORATORY DATA ANALYSIS</h2>
 <div id="a-precision-is-the-precision-acceptable-2.5-for-each-participant" class="section level3">
 <h3>3A PRECISION: Is the precision acceptable (&lt; 2.5) for each participant?</h3>
-<p>Visualize the distribution of precision to see if there are values above 2.5. Create a summary to figure out which participants would we need to exclude if &gt; 2.5 meant the data are unuseable? Use a summary table and plots to investigate whether data equally precise for participants of different ages.</p>
+<p>Use a summary table and plots to investigate whether data equally precise for participants of different ages.</p>
 <p>Visualize the distribution of precision to see if there are values above 2.5.</p>
 <pre class="r"><code>ds %&gt;% ggplot(aes(x = precision)) + geom_histogram() + geom_vline(xintercept = 2.5)</code></pre>
 <pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
